@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(./5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+
+
+
+
+}
+.form{
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255,0.5);
+  border-radius: 30px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+
+  
+
+}
+h2{
+  color: white;
+  font-size: 1cm;
+  text-align: center;
+}
+.inputbox{
+ position: relative;
+ margin: 30px 0;
+ border-bottom: 2px solid white;
+ 
+}
+ 
+.inputbox label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: hsl(240, 20%, 99%);
+font-size: 0.4cm;
+pointer-events: none;
+transition: .2s;
+}
+input:focus ~ label,
+input:valid ~ label{
+  top: -5px;
+}
+
+.inputbox input{
+  width: 250px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.4cm;
+  padding:  0 35px 0 5px;
+  color: #fcfcfd;
+
+}
+.inputbox ion-icon{
+  position: absolute;
+  right: 6px;
+  color: #fcfcfd;
+}
+.forget{
+  margin: -15px 0 15px;
+  font-size: 0.4cm;
+  color: #fcfcfd;
+  display: flex;
+  justify-content: center;
+}
+.forget label input{
+  margin-right: 3px;
+
+}
+.forget label a{
+  color: #fcfcfd;
+  text-decoration: none;
+}
+.forget label a:hover{
+  text-decoration: underline;
+}
+button{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #f3f5f5;
+  padding: 14px 40px;
+width: 100%;
+background-color: #fff;
+  outline: none;
+  color: rgb(22, 21, 21);
+  border-radius: 30px;
+  text-align: center;
+  
+  transition: 0.25s;
+  cursor: pointer;
+}
+.rigister{
+  font-size: 0.4cm;
+  color: #fcfcfd;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+  .rigister p a{
+    text-decoration: none;
+    color: #fcfcfd;
+    font-weight: 400;
+  }
+.rigister p a:hover{
+  text-decoration: underline;
+}
